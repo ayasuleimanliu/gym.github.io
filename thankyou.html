@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You - Z Underground Gym</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+ 
+    window.onload = function() {
+      const params = new URLSearchParams(window.location.search);
+      const membership = params.get('membership');
+      const membershipDisplay = document.getElementById('membership-type');
+
+      if (membership === 'daily') {
+        membershipDisplay.textContent = "Daily Pass - $7";
+      } else if (membership === 'monthly') {
+        membershipDisplay.textContent = "Monthly Plan - $30";
+      } else {
+        membershipDisplay.textContent = "Your selected membership";
+      }
+    };
+  </script>
+</head>
+<body >
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h1>🎉 Thank You for Registering!</h1>
+    <p>Welcome to <strong>Z-Underground Gym</strong>. Your journey to strength and transformation begins now!</p>
+
+    <p>Your selected membership: <strong id="membership-type"></strong></p>
+
+    <h2>Gym Etiquette & Rules</h2>
+    <ul>
+      <li>👟 Wear proper gym attire and clean shoes</li>
+      <li>💧 Bring your water bottle and towel</li>
+      <li>🧼 Wipe down equipment after use</li>
+      <li>⏳ Respect time limits on machines</li>
+      <li>🧍 Don’t crowd others – give space</li>
+      <li>🔇 No loud music or shouting</li>
+      <li>🕒 Arrive on time for classes</li>
+    </ul>
+
+    <p>
+      We're excited to see your progress! Stay consistent, stay strong. If you have any questions, don’t hesitate to ask one of our trainers.
+    </p>
+
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="index.html" class="btn"><--Back to Home</a>
+      
+         <a href="contact.html" class="btn">Contact Us--></a>
+    </div>
+    <script>
+    window.onload = function () {
+      alert("Registration successful!");
+    };
+  </script>
+  </main>
+
+  
+ 
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Z Underground Gym - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+  <header>
+    <div class="hero">
+      <img src="picss/WhatsApp Image 2025-05-24 at 20.21.22_acb1a359.jpg" alt="Gym Image">
+      <div class="overlay">
+        <nav class="navbar">
+          <a href="index.php">Home</a>
+          <a href="about.html">About</a>
+          <a href="registration.html">Register</a>
+          <a href="login.html">Login</a>
+        </nav>
+
+        <div class="hero-content">
+          <h1 class="logo"><span class="z"><i>Z -</i></span> <span class="underground">Underground Gym</span></h1>
+          <h2 class="slogan"><strong><b>We Are Best Gymnes</b></strong></h2>
+          <h2 class="highlight">Powerful Weight</h2>
+          <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum est inventore repellendus iure molestias beatae ducimus quisquam aperiam eaque magni accusantium exercitationem unde quo nesciunt,
+            <blockquote>sapiente similique esse. Corporis dolores fugiat officia, nihil maxime, facilis illum repellat laudantium numquam dolorum iure quasi deserunt laboriosam enim, eaque eos voluptatum mollitia autem.</blockquote>
+          </h4>
+
+          <br><br>
+          <div class="btn-group">
+            <a class="btn" href="about.html">Enter Gym</a>
+            <a class="btn" href="contact.html">Contact Us</a>
+          </div>
+
+          <p class="footer">&copy; 2025 Z Underground Gym</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main >
+    <h2>Welcome, <?php echo htmlspecialchars($_SESSION['fullname']); ?>!</h2>
+    <p>Your journey to strength begins here. Join us to train hard, push limits, and transform your life.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
